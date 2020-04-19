@@ -8,7 +8,11 @@ from playsound import playsound
 
 import funcionesutiles
 from funcionesutiles import buscalugar
+import pychromecast
+
 from funcionesutiles import buscavideo
+from funcionesutiles import anadirportada
+from voz import decir
 # Establecemos conexion con el servidor smtp de gmail
 """mailServer = smtplib.SMTP('smtp.gmail.com',587)
 mailServer.ehlo()
@@ -30,4 +34,7 @@ numero = len(m.list()[1])
 print(numero)"""
 while True:
     prueba = input("Introduce la cancion que quieres buscar:")
+    decir('He encontrado la cancion ' + str(prueba))
     buscavideo(str(prueba),True)
+
+
