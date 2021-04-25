@@ -23,7 +23,7 @@ import time
 def play(audio_file_path):
     subprocess.call(["ffplay", "-nodisp", "-autoexit", audio_file_path])
 def anadirportada(nombre, directoriocan):
-    headers = {'apikey': '1ee66c20-819c-11ea-b98d-af42afd01274'}
+    headers = {'apikey': ''}
 
     params = (
         ("q", nombre + " Caratula"),
